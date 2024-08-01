@@ -3,3 +3,9 @@ DEVELOPERS:
   email: wangyj641@gmail.com
   github: https://github.com/wangyj641
   
+
+FEISHU_CONFIG:
+  FEISHU_URL: https://open.feishu.cn/open-apis
+  FEISHU_API_HOST: https://open.feishu.cn
+  FEISHU_APP_ID: cli_a621e4fb083ad00b
+  FEISHU_APP_SECRET: bzYhU9i2x0ejE1o74geQtETXOc0VwrG0
