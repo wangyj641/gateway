@@ -12,6 +12,7 @@ import {
 import { UserService } from './user.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
+import { BusinessException } from 'src/common/exceptions/business.exception';
 
 @Controller({
   path: 'user',
@@ -28,6 +29,19 @@ export class UserController {
   @Get()
   @Version([VERSION_NEUTRAL, '1'])
   findAll() {
+    return this.userService.findAll();
+  }
+
+  // exception handle sample
+  @Get('GetBusinessError')
+  @Version([VERSION_NEUTRAL, '1'])
+  GetBusinessError() {
+    const a: any = {};
+    try {
+      console.log(a.b.c);
+    } catch (error) {
+      throw new BusinessException('Invalid arguments');
+    }
     return this.userService.findAll();
   }
 
