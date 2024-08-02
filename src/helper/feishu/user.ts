@@ -12,7 +12,7 @@ export const getUserInfo = async (user_token: string) => {
 };
 
 /**
- * 获取通信录单个用户信息
+ * Get single user information of contact
  * @param feishuUserId
  * @param user_token
  * @returns
@@ -35,11 +35,14 @@ export const getSingleUserInfo = async (
 };
 
 /**
- * 获取用户列表
+ * Get user list
  * @param app_token
  * @returns
  */
-export const getUserListByDepartmentId = async (department_id: string, app_token: string) => {
+export const getUserListByDepartmentId = async (
+  department_id: string,
+  app_token: string,
+) => {
   const { data } = await methodV({
     url: `https://open.feishu.cn/open-apis/contact/v3/users`,
     // url: `/contact/v3/users/find_by_department`,
@@ -55,7 +58,6 @@ export const getUserListByDepartmentId = async (department_id: string, app_token
   });
   return data;
 };
-
 
 export const getEmployeeTypeEnums = async ({ app_token }) => {
   const { data } = await methodV({
