@@ -32,6 +32,7 @@
     "axios": "^1.7.2",
     "cache-manager": "^5.7.4",
     "cross-env": "^7.0.3",
+    "esm": "^3.2.25",
     "reflect-metadata": "^0.2.0",
     "run-script-webpack-plugin": "^0.2.0",
     "rxjs": "^7.8.1",
