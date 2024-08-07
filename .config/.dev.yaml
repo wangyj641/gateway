@@ -11,3 +11,14 @@ FEISHU_CONFIG:
   FEISHU_APP_SECRET: bzYhU9i2x0ejE1o74geQtETXOc0VwrG0
 
 APP_TOKEN_CACHE_KEY: APP_TOKEN_CACHE_KEY
+
+MONGODB_CONFIG:
+  name: "my_gateway_test"          # 自定义次数据库链接名称
+  type: mongodb                      # 数据库链接类型
+  url: "mongodb://localhost:27017"   # 数据库链接地址
+  username: "admin"                   # 数据库链接用户名
+  password: "123456"                 # 数据库链接密码
+  database: "my_gateway_test"      # 数据库名
+  entities: "mongo"                  # 自定义加载类型
+  logging: false                     # 数据库打印日志
+  synchronize: true                  # 是否开启同步数据表功能
