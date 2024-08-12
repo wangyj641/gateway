@@ -22,3 +22,10 @@ MONGODB_CONFIG:
   entities: "mongo"                  # 自定义加载类型
   logging: false                     # 数据库打印日志
   synchronize: true                  # 是否开启同步数据表功能
+
+
+REDIS_CONFIG:
+  host: "localhost"  # redis 链接
+  port: 6379         # redis 端口
+  auth: "xxxx"       # redis 连接密码
+  db: 1              # redis 数据库
