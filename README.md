@@ -8,34 +8,41 @@
 - SWagger documentation
 
 ### Key Features
-
 - User management
+- Feishu APIs
 
+### How to start
 
-## Installation
+- Prerequisites
 
+create Docker monoDB container
 ```bash
-$ pnpm install
+docker run --name mongodb -p 27017:27017 -d mongodb/mongodb-community-server:latest
 ```
 
-## Running the app
+Install dependencies
+```bash
+pnpm install
+```
+
+- Running the app
 
 ```bash
 # development
-$ pnpm run start
+pnpm run start
 
 # watch mode
-$ pnpm run start:dev
+pnpm run start:dev
 
 # production mode
-$ pnpm run start:prod
+pnpm run start:prod
 ```
 
-## Test
+- Test
 
 ```bash
 # unit tests
-$ pnpm run test
+pnpm run test
 
 # e2e tests
 $ pnpm run test:e2e
